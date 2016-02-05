@@ -1,0 +1,414 @@
+/*--------------
+=    BANER     =
+----------------*/
+.baner{
+	margin-bottom:80px ;
+	.big-baner-img-wrap{
+		overflow: hidden;
+		display: block;
+		line-height: 0;
+		img{
+			transition: all 2s ease-in-out;
+			&:hover{
+				transform: scale(1.2);
+			}
+		}
+	}
+	.small-baner-img-wrap{
+		overflow: hidden;
+		display: block;
+		a{
+			line-height: 0;
+			display: block;
+		}
+		img{
+			transition: all 2s ease-in-out;
+			&:hover{
+				transform: scale(1.2);
+			}
+		}
+	}
+	.big-baner{
+		position: relative;
+		.big-baner-info{
+			position: absolute;
+			top:50%;
+			left: 0;
+			right: 0;
+			transform: translateY(-50%);
+			text-align: center;
+			span{
+				color: #fff;
+				font-size: 60px;
+				font-weight: 700;
+				line-height: 60px;
+				text-transform: uppercase;
+				margin-bottom: 28px;
+				display: block;
+			}
+			h1{
+				color: #fff;
+				font-size: 130px;
+				font-weight: 700;
+				line-height: 60px;
+				text-transform: uppercase;
+				display: block;
+				margin-bottom: 85px;
+			}
+			a{
+				color: #fff;
+				font-size: 13px;
+				font-weight: 400;
+				text-transform: uppercase;
+				padding: 21px 46px;
+				border: 1px solid #fff;
+				transition: all 0.2s ease-in-out;
+				&:hover{
+					background-color: @maincolor;
+						border: 1px solid  @maincolor;
+				}
+			}
+		}
+	}
+	.small-baner{
+		position: relative;
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		.small-baner-info{
+			position: absolute;
+			top:50%;
+			left: 0;
+			right: 0;
+			h2{
+				color: #fff;
+				font-size: 30px;
+				font-weight: 700;
+				text-transform: uppercase;
+				text-align: center;
+				transition: all .2s ease-in-out;
+				&:hover{
+					color: @maincolor;
+					transition: all .2s ease-in-out;
+				}
+			}
+		}
+	}
+}
+/*--------------
+=    BANER     =
+----------------*/
+
+/*---------------
+=    WARRANTY    =
+----------------*/
+.warranty{
+	margin-bottom: 80px;
+	text-align: center;
+	i{
+		border: 2px #141414 solid;
+		border-radius: 50px;
+		width: 80px;
+		height: 80px;
+		color:#141414;
+		font-size: 35px;
+		line-height: 77px;
+		transition: all .2s ease-in-out;
+		margin-bottom: 40px;
+		&:hover{
+			background-color: @maincolor;
+			color:#fff;
+			border: 2px @maincolor solid;
+			transition: all .2s ease-in-out;
+		}
+	}
+	h4{
+		color: #141414;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	p{
+		color: #6f6f6f;
+		font-family: CrimsonText;
+		font-size: 16px;
+		font-style: italic;
+		line-height: 24px;
+
+	}
+}
+/*---------------
+=    WARRANTY    =
+----------------*/
+
+/*---------------
+=    TABS       =
+----------------*/
+	 .nav-tabs{
+		 border-bottom: 0px;
+		 text-align: center;
+		 margin-bottom: 30px;
+		 li{
+			 float: none;
+			 display: inline-block;
+			 a{
+				 border: 0px;
+				 color: #141414;
+				 text-transform: uppercase;
+				 font-size: 14px;
+				 font-weight: 700;
+				 transition: all .2s ease-in-out;
+				 line-height: 60px;
+				 &:hover{
+					 color:@maincolor;
+					 background-color: #fff;
+					 border: 0px;
+				 }
+				}
+		 }
+	 }
+	 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+		 border: 0px;
+		 color: @maincolor;
+		 background-color: #fff;
+		 position: relative;
+		 &:before{
+			 content: '';
+			 background-color: @maincolor;
+			 width: 10px;
+			 height: 10px;
+			 position: absolute;
+			 bottom: 0;
+			 left: 50%;
+			 transform: translate(-50%) rotate(45deg);
+		 }
+	 }
+
+	/*---------------
+	=   TABS-POST   =
+	----------------*/
+	.arrival{
+		margin-bottom: 80px;
+		.page-item{
+			margin-bottom: 0;
+		}
+	}
+	.weekly{
+		margin-bottom: 80px;
+		.page-item{
+			margin-bottom: 0;
+		}
+	}
+	/*---------------
+	=     CAROUSEL     =
+	----------------*/
+	.tab-content{
+		overflow: hidden;
+		.wrapper-home-page{
+			margin: 0 -15px;
+			.page-item{
+				margin: 0 15px;
+			}
+		}
+	}
+	
+	/*---------------
+	=    CAROUSEL      =
+	----------------*/
+
+
+	/*---------------
+	=     TABS      =
+	----------------*/
+	/*---------------
+	=     TRENDS      =
+	----------------*/
+	.trends{
+		margin-bottom: 80px;
+		.trends-post{
+			position: relative;
+			.trends-info{
+				position: absolute;
+				top:50%;
+				transform: translateY(-50%);
+				text-align: center;
+				left: 0;
+				right: 0;
+				span{
+					color: white;
+					font-size: 24px;
+					font-weight: 700;
+					line-height: 60px;
+					text-transform: uppercase;
+				}
+				h3{
+					color: white;
+					font-size: 72px;
+					font-weight: 700;
+					line-height: 60px;
+					text-transform: uppercase;
+				}
+				.trends-button{
+					text-transform: uppercase;
+					color: white;
+					font-size: 30px;
+					font-weight: 700;
+					border: 4px solid white;
+					padding: 10px 40px;
+					transition: all .2s ease-in-out;
+					&:hover{
+						border: 4px solid @maincolor;
+						color:@maincolor;
+					}
+				}
+			}
+			.trends-img-wrap{
+				overflow: hidden;
+				display: block;
+				line-height: 0;
+				img{
+					transition: all 2s ease-in-out;
+					&:hover{
+						transform: scale(1.2);
+					}
+				}
+			}
+		}
+	}
+	/*---------------
+	=     TRENDS      =
+	----------------*/
+
+	/*---------------
+	=     NEWS      =
+	----------------*/
+
+	.news{
+		margin-bottom: 250px;
+		.news-info{
+			h3{
+				a{
+					color: #141414;
+					font-size: 18px;
+					font-weight: 400;
+					display: block;
+					margin: 15px 0 15px 0;
+					transition: all 0.2s ease-in-out;
+					&:hover{
+						color:@maincolor;
+					}
+				}
+			}
+			span{
+				font-size: 14px;
+				font-weight: 400;
+				color: #141414;
+				margin-bottom: 19px;
+				display: block;
+				.natasha{
+					color: #eeb013;
+				}
+			}
+			p{
+				color: #6f6f6f;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 24px;
+				margin-top: 15px;
+				margin-bottom: 50px;
+			}
+			ul{
+				border-top:1px solid #ececec;
+				border-bottom: 1px solid #ececec;
+				li{
+					display: inline-block;
+					padding: 8px 0;
+					margin-right: 15px;
+					a{
+						color: #6f6f6f;
+						font-size: 12px;
+						font-weight: 400;
+						transition: all 0.2s ease-in-out;
+						&:hover{
+							color: @maincolor;
+						}
+						i{
+						font-size: 15px;
+						margin-right: 8px;
+						}
+					}
+				}
+			}
+			.meta-post{
+				position: relative;
+				.news-date{
+					position: absolute;
+					top: -18px;
+					right: 0;
+					a{
+						background-color: @maincolor;
+						color: white;
+						font-family: CrimsonText;
+						font-size: 16px;
+						font-style: italic;
+						width: 58px;
+						height: 52px;
+						display: block;
+						text-align: center;
+						padding: 10px;
+						text-transform: uppercase;
+					}
+				}
+			}
+			
+			.news-button{
+				color: #141414;
+				font-size: 14px;
+				font-weight: 400;
+				text-transform: uppercase;
+				border: 2px solid #e4e4e4;
+				padding: 13px 33px;
+				transition: all .2s ease-in-out;
+				display: inline-block;
+				&:hover{
+					border: 2px solid @maincolor;
+					background-color: @maincolor;
+					color:#fff;
+				}
+			}
+		}
+	}
+
+	/*---------------
+	=     NEWS      =
+	----------------*/
+.video{
+	position: relative;
+	#open-popup {
+		width: 88px;
+		height: 88px;
+		background-color: #242424;
+		outline: none;
+		border: 1px solid #666;
+		position: absolute;
+		bottom: 66%;
+		left: 50%;
+		transform: translateX(-50%);
+		i{
+			font-size: 40px;
+			color: #fff;
+		}
+	}
+}
+
+.white-popup {
+position: relative;
+background: #FFF;
+padding: 40px;
+width: auto;
+max-width: 200px;
+margin: 20px auto;
+text-align: center;
+}

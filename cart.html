@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700,700italic,600italic,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href="css/style.css" rel="stylesheet" >
+		<link href="css/responsive.css" rel="stylesheet" >
+		<link rel="stylesheet" href="css/jquery-ui.css">
+	</head>
+	<body>
+		<!--HEADER-->
+		<header class="absolute-header">
+			<div class="container header-sidebar">
+				<div class="logo">
+					<a href="#"><img src="img/side-bar-logo.png" alt=""></a>
+				</div>
+				<div class="menu">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="side-bar.html">Sidebar</a></li>
+									<li><a href="detail.html">Detail</a></li>
+									<li><a href="cart.html">Cart</a></li>
+									<li><a href="check.html">Check out</a></li>
+									<li><a href="#">Blog</a></li>
+									<li class="cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+									<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<!-- breadcrumbs -->
+		<div class="breadcrumbs">
+			<div class="container">
+				<div class="title">
+					<h1>shopping cart</h1>
+					<a href="index.html">home</a>
+					<i class="fa fa-angle-right"></i>
+					<span>shopping cart</span>
+				</div>
+			</div>
+		</div>
+		<!-- MAIN CONTAINER -->
+		<div class="container cart">
+			<table>
+				<thead class="header-row">
+					<th class="products-th">products</th>
+					<th class="price-th">price</th>
+					<th class="qty-th">qty</th>
+					<th class="total-th">total</th>
+				</thead>
+				<tbody>
+					<tr class="cart-products">
+						<td class="products-name"><a href="#"><img src="img/cart-product-img.jpg" alt=""></a><a href="#">Raincoat with contrast sleeve</a></td>
+						<td class="cart-price">$79.00</td>
+						<td class="input"><input type="number" id="spinner-line" name="value" value="01" min="1" max="9999"> </td>
+						<td class="cart-price">$159.00</td>
+					</tr>
+					<tr class="cart-products">
+						<td class="products-name"><a href="#"><img src="img/cart-product-img.jpg" alt=""></a><a href="#">Raincoat with contrast sleeve</a></td>
+						<td class="cart-price">$79.00</td>
+						<td class="input"><input type="number" id="spinner-line" name="value" value="01" min="1" max="9999"> </td>
+						<td class="cart-price">$159.00</td>
+					</tr>
+				</tbody>
+				<tfoot class="footer-row">
+				<td><a href="#" class="cart-button">update cart</a><a href="#" class="cart-button">clear cart</a></td>
+				<td colspan="3"><a href="#" class="cart-button">continue</a></td>
+				</tfoot>
+			</table>
+			<div class="row bottom-block">
+				<div class="col-md-4">
+					<h3 class="cart-title">have a coupon ?</h3>
+					<form>
+						<div class="form-group">
+							<input class="form-control" placeholder="Enter your code...">
+						</div>
+						<button type="submit" class="btn btn-default">apply coupon</button>
+					</form>
+				</div>
+				<div class="col-md-4">
+					<h3 class="cart-title">estimate shipping tax</h3>
+					<label for="country" class="form-label star"> country </label>
+					<select name="country" id="country" class="form-control basic-select">
+						<option selected="selected"> United States </option>
+						<option> Switzerland </option>
+						<option> Deuchland </option>
+					</select>
+					<form>
+						<div class="form-group">
+							<label for="">state / province</label>
+							<input class="form-control" placeholder="">
+						</div>
+						<div class="form-group">
+							<label for="">Zip / postal code</label>
+							<input class="form-control" placeholder="">
+						</div>
+						<button type="submit" class="btn btn-default">estimate tax</button>
+					</form>
+				</div>
+				<div class="col-md-4">
+					<h3 class="cart-title">cart totals</h3>
+					<div class="subtotal-wrap">
+						<table class="subtotal">
+							<tr>
+								<td class="subtotal-title">subtotal</td>
+								<td class="cart-price right">$159.00</td>
+							</tr>
+							<tr>
+								<td class="subtotal-title">shipping</td>
+								<td><ul class="shipping">
+									<li>
+										<input type="radio" id="r1" name="rr" />
+										<label for="r1"><span class="radio-one"></span>
+										<span class="shipping-name"> flat rate </span>
+									<span class="cart-price"> $85.00 </span>
+									</label>
+								</li>
+								<li>
+									<input type="radio" id="r2" name="rr" />
+									<label for="r2"><span class="radio-two"></span>
+									<span class="shipping-name"> international </span>
+									<span class="cart-price"> $60.00 </span>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="r3" name="rr" />
+								<label for="r3"><span class="radio-three"></span>
+								<span class="shipping-name"> local pickup</span>
+								<span class="cart-price"> free </span>
+							</label>
+						</li>
+					</ul></td>
+				</tr>
+				<tr>
+					<td class="subtotal-title">total</td>
+					<td class="big-price">$159.00</td>
+				</tr>
+				
+				
+			</table>
+			<p class="subtotal-note">Note: Shipping and taxes are estimated and will be updated during checkout based on your billing and shipping information.</p>
+			<a href="#" class="total-button">Process to checkout</a>
+		</div>
+	</div>
+</div>
+</div>
+<!--FOOTER-->
+<footer>
+<div class="container">
+	<div class="top-footer">
+		<div class="row">
+			<div class="col-md-4 footer-post">
+				<h3>Creative Agency from London - UK</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<a href="#" class="logo-footer"><img src="img/footer-logo.png" alt=""></a>
+			</div>
+			<div class="col-md-2 footer-post">
+				<h3 class="footer-title">links</h3>
+				<ul>
+					<li><a href="#">theme features</a></li>
+					<li><a href="https://vk.com/ernest_beginov">page builder</a></li>
+					<li><a href="#">private policy</a></li>
+					<li><a href="#">shop ruler</a></li>
+					<li><a href="#">services</a></li>
+					<li><a href="#">galery layout</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 footer-post widget">
+				<h3 class="footer-title">Twitter widget</h3>
+				<p>Looking for an awesome CREATIVE WordPress Theme? Esquise was updated and optimized to run even better. Find it here: <span>http://t.co/0WWEMQEQ48</span></p>
+				<a href="#" class="twit"><i class="fa fa-twitter"></i> 01 day ago</a>
+				<p>It is a long established fact that a reader will be distracted by the readable . Find it here:  <span>http://t.co/0WWEMQEQ48</span></p>
+				<a href="#" class="twit"><i class="fa fa-twitter"></i> 02 day ago</a>
+			</div>
+			<div class="col-md-3 footer-post">
+				<h3 class="footer-title">instagram</h3>
+				<div class="col-md-12">
+					<ul class="insta">
+						<li><a href="#"><img src="img/footer-img.jpg" alt=""></a></li>
+						<li><a href="#"><img src="img/footer-img.jpg" alt=""></a></li>
+						<li><a href="#"><img src="img/footer-img.jpg" alt=""></a></li>
+						<li><a href="#"><img src="img/footer-img.jpg" alt=""></a></li>
+						<li><a href="#"><img src="img/footer-img.jpg" alt=""></a></li>
+						<li><a href="#"><img src="img/footer-img.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bot-footer">
+		<div class="row">
+			<div class="col-md-5">
+				<p>© 2015 ZAP CREATIVE PSD TEMPLATE. Powered By WPELITE</p>
+			</div>
+			<div class="col-md-4 col-md-offset-3">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-globe"></i></a></li>
+					<li><a href="#"><i class="fa fa-behance"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+<!--END-FOOTER-->
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</html>

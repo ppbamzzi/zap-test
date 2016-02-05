@@ -1,0 +1,560 @@
+/*--------------
+=    HEADER    =
+----------------*/
+.absolute-header{
+	position: absolute;
+	left:0;
+	right: 0;
+	z-index: 2;
+	.navbar-default{
+		li{
+			a{
+			text-transform: uppercase;
+			color: #fff !important;
+			font-size: 14px;
+			font-weight: 400;
+			transition: all .2s ease-in-out;
+			margin: 15px 24px;
+			padding: 0;
+			position: relative;
+				&:hover{
+					color: @maincolor !important;
+				}
+			}
+		}
+	}
+}
+.breadcrumbs{
+	width: 100%;
+	background-color: #1d1d1d;
+	padding: 340px 0 250px 0;
+	margin-bottom: 100px;
+	.title{
+		text-align: center;
+		h1{
+			color: white;
+			font-size: 48px;
+			font-weight: 700;
+			text-transform: uppercase;
+			display: block;
+			margin-bottom: 40px;
+			letter-spacing: 3px;
+		}
+		i{
+			color: white;
+			padding: 0 15px;
+			font-size: 11px;
+		}
+		a{
+			color: white;
+			font-size: 12px;
+			font-weight: 400;
+			text-transform: uppercase;
+			transition: all .2s ease-in-out;
+			&:hover{
+				color: @maincolor;
+
+			}
+		}
+		span{
+			color: white;
+			font-size: 12px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+}
+/*--------------
+=    HEADER    =
+----------------*/
+.page-content{
+	padding: 0 0 78px 0;
+
+}
+/*--------------
+=    PAGE SETTINGS    =
+----------------*/
+.page-settings{
+	margin-bottom: 36px;
+	.left-settings{
+		float: left;
+		.i-icon{
+			display: inline-block;
+			position: relative;
+			top: 7px;
+			li{
+				display: inline-block;
+				margin-right: 15px;
+				&:last-child{
+					margin-right: 5px;
+				}
+				a{
+					color: #141414;
+					transition: all .2s ease-in-out;
+					&:hover{
+						color:@maincolor;
+					}
+				}
+			}
+		}
+	}
+	.dropdown{
+		display: inline-block;
+	}
+	.right-settings{
+		position: relative;
+		float: right;
+		top: 15px;
+		&:before{
+			content: '';
+			width: 5px;
+			height: 5px;
+			border: 1px solid black;
+			position: absolute;
+			transform: rotate(45deg);
+			left: 63%;
+			top: 6px;
+		}
+		li{
+			color: #6f6f6f;
+			font-family: CrimsonText;
+			font-size: 16px;
+			font-style: italic;
+			display: inline-block;
+			margin-left: 15px;
+			a{
+				color: #6f6f6f;
+				font-family: CrimsonText;
+				font-size: 16px;
+				font-style: italic;
+				transition: all .2s ease-in-out;
+				&:hover{
+					color:@maincolor;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.btn-default{
+		color: #141414;
+		font-family: CrimsonText;
+		font-size: 12px;
+		font-style: italic;
+		text-transform: uppercase;
+		border-radius: 0;
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	.caret{
+		float: right;
+		margin-top: 5px;
+		color: #909090;
+		}
+	.btn{
+		border: 0px solid;
+		border-bottom: 1px solid #ececec;
+		outline: none;
+		background-color: transparent;
+		box-shadow: none;
+		width: 170px;
+		text-align: left;
+	}
+	.open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+		background-color: #fff;
+	}
+	.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default{
+		outline: none;
+	}
+}
+
+
+/*--------------
+=    PAGE SETTINGS    =
+----------------*/
+
+/*--------------
+=    ITEM       =
+----------------*/
+	.page-item{
+		margin-bottom: 79px;
+		&:nth-child(3n+2){
+			clear: both;
+		}
+		a{
+			color: #141414;
+			font-size: 12px;
+			font-weight: 400;
+			display: block;
+			letter-spacing: 1px;
+			margin-bottom: 20px;
+			transition: all .2s ease-in-out;
+			text-transform: uppercase;
+				&:hover{
+					color: @maincolor;
+				}
+			}
+			.item-wrap{
+				position:relative;
+				transition: all .2s ease-in-out;
+				a{
+					&:hover{
+						opacity: 0.6;
+					}
+				}
+				&:hover{
+					.add-to-cart{
+						opacity: 1;
+					}
+				}
+				.add-to-cart{
+					position: absolute;
+					bottom: 1px;
+					opacity: 0;
+					width: 100%;
+					transition: all .2s ease-in-out;
+					background-color: @maincolor;
+					&:hover{
+						opacity: 1;
+					}
+					.banner{
+						color: #000;
+						height: 12px;
+						font-size: 14px;
+						font-weight: 400;
+						text-transform: uppercase;
+						width: 100%;
+						height: 60px;
+						text-align: center;
+						margin-bottom: 0;
+						padding: 25px 0;
+						&:hover{
+							color: #000;
+							opacity: 1;
+						}
+					}
+				}
+			.top-baner{
+				position: absolute;
+				top: 25px;
+				left: 15px;
+				span{
+					color: #141414;
+					font-size: 10px;
+					font-weight: 700;
+					border: 2px solid black;
+					padding: 10px 10px;
+					text-transform: uppercase;
+				}
+			}
+			.sale{
+				position: absolute;
+				top:0;
+				right: 0;
+				span{
+					color: #141414;
+					font-size: 10px;
+					font-weight: 700;
+					background-color: @maincolor;
+					width: 39px;
+					height: 36px;
+					display: block;
+					text-align: center;
+					padding: 13px 0;
+
+				}
+			}
+		}
+		.left-price{
+			color: #141414;
+			font-family: CrimsonText;
+			font-size: 18px;
+			font-style: italic;
+			margin-right: 5px;
+			letter-spacing: 1px;
+		}
+		.right-price{
+			color: #6f6f6f;
+			font-family: CrimsonText;
+			font-size: 18px;
+			font-style: italic;
+			text-decoration: line-through;
+			letter-spacing: 1px;
+		}
+		.new{
+			position: relative;
+			.new-table{
+				position: absolute;
+				top: 10px;
+				left:10px;
+				span{
+					color: #141414;
+					font-size: 10px;
+					font-weight: 700;
+					padding: 10px 15px;
+					border: 2px solid black;
+					text-transform: uppercase;
+					display: block;
+				}
+			}
+		}
+	}
+
+/*--------------
+=     ITEM       =
+----------------*/
+/*--------------
+=     BOTTOM-UL      =
+----------------*/
+	.bottom-ul{
+		text-align: center;
+		padding-top: 89px;
+		border-top: 2px solid #ececec;
+		li{
+			display: inline-block;
+			margin-right: 5px;
+			a{
+				color: #141414;
+				font-family: CrimsonText;
+				font-size: 18px;
+				font-style: italic;
+				padding: 15px 19px;
+				border: 1px solid #ececec;
+				transition: all .2s ease-in-out;
+				&:hover{
+					color:@maincolor;
+					border: 1px solid @maincolor;
+				}
+			}
+		}
+	}
+/*--------------
+=    BOTTOM-UL       =
+----------------*/
+
+/*--------------
+=     SIDE-BAR       =
+----------------*/
+
+/*--------------
+=     SEARCH       =
+----------------*/
+.form-search{
+	display: inline-block;
+	position: relative;
+	padding-bottom: 35px;
+	input {
+		background-color: white;
+		width: 270px;
+		height: 50px;
+		background-color: transparent;
+		border: 1px solid #ececec;
+		color: #6f6f6f;
+		font-family: CrimsonText;
+		font-size: 16px;
+		font-style: italic;
+		line-height: 1;
+		padding-left: 20px;
+		outline: none;
+	}
+	.btn{
+		background-color: #fff;
+		position: absolute;
+		top: 30%;
+		right: 5px;
+		transform: translateY(-50%);
+		color: #909090;
+		outline: none;
+		i{
+			transition: all .2s ease-in-out;
+			&:hover{
+				color: @maincolor;
+			}
+		}
+		&:active{
+			outline: none;
+			box-shadow: none;
+		}
+	}
+}
+/*--------------
+=     SEARCH       =
+----------------*/
+
+/*--------------
+=   sidebar-widget =
+----------------*/
+.sidebar-widget{
+	margin-bottom: 30px;
+	ul{
+		padding-left: 30px;
+		li{
+			padding: 1px 0;
+			a{
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 42px;
+				color: #6f6f6f;
+				transition: all .2s ease-in-out;
+				&:hover{
+					color: @maincolor;
+				}
+			}
+		}
+	}
+	.size{
+		display: inline-block;
+		padding: 15px 24px;
+		border: 2px solid #ececec;
+		margin-bottom: 5px;
+		transition: all .2s ease-in-out;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: 400;
+		cursor: pointer;
+
+		&:hover{
+			border: 2px solid #141414;
+		}
+	}
+	.active{
+		border: 2px solid #141414;
+	}
+	.price-button{
+		text-transform: uppercase;
+		border: 2px solid #e4e4e4;
+		color: #141414;
+		font-size: 12px;
+		font-weight: 400;
+		padding: 15px 34px;
+		transition: all .2s ease-in-out;
+		display: inline-block;
+		&:hover{
+			color: #fff;
+			background-color: @maincolor;
+			border: 2px solid @maincolor;
+		}
+	}
+	.ui-slider .ui-slider-handle{
+		width: 20px;
+		height: 20px;
+		border-radius: 50px;
+	}
+	.ui-slider .ui-slider-range{
+		background-color: #141414;
+	}
+	.ui-slider-horizontal .ui-slider-handle{
+		top:-9px;
+	}
+	.ui-slider-horizontal{
+		height: 4px;
+		border-radius: 0;
+		background-color: #909090;
+	}
+	.ui-widget-content{
+		border: 0;
+		background-color: #909090;
+		margin-bottom: 70px;
+	}
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+		background-color: @maincolor;
+		cursor: pointer;
+		outline: none;
+	}
+	p{
+		text-align: center;
+		input{
+			color: #6f6f6f;
+			font-size: 13px;
+			font-weight: 400;
+			border: 0;
+			text-align: center;
+			margin-bottom: 8px;
+			outline: none;
+		}
+	}
+	.sidebar-title{
+		font-family: CrimsonText;
+		font-size: 24px;
+		font-weight: 700;
+		font-style: italic;
+		padding-bottom: 15px;
+		position: relative;
+		padding-left: 30px;
+		margin-bottom: 20px;
+	&:before{
+		content: '';
+		background-color: @maincolor;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		left: 10px;
+		top: 7px;
+		transform: translate(-50%) rotate(45deg);
+	}
+	&:after{
+		content: '';
+		width: 270px;
+		height: 1px;
+		background-color: #141414;
+		position: absolute;
+		left: 0;
+		top: 40px;
+
+		}
+	}
+	.top-sale{
+		padding: 0;
+	}
+	.sale-row{
+		margin-bottom: 30px;
+		display: inline-block;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		.sale-img{
+			display: block;
+			float: left;
+			margin-right: 30px;
+		}
+		.sale-info{
+			float:right;
+			a{
+				display: block;
+				color: #141414;
+				font-size: 12px;
+				font-weight: 400;
+				margin-bottom: 20px;
+				text-transform: uppercase;
+				line-height: 20px;
+				transition: all .2s ease-in-out;
+				&:hover{
+					color: @maincolor;
+				}
+			}
+			.price{
+				color: #141414;
+				font-family: CrimsonText;
+				font-size: 18px;
+				font-style: italic;
+			}
+		}
+	}
+	.tags{
+			display: inline-block;
+			padding: 12px 10px;
+			color: #6f6f6f;
+			font-size: 13px;
+			font-weight: 400;
+			border: 1px solid #ececec;
+			transition: all .2s ease-in-out;
+			margin-bottom: 5px;
+			&:hover{
+				border: 1px solid @maincolor;
+				color: @maincolor;
+			}
+	 }
+}
+/*--------------
+=   sidebar-widget =
+----------------*/
